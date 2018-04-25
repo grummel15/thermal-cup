@@ -44,11 +44,12 @@ The first part of the assembly was to assemble the circuit used. This was done u
 After obtaining the Ozark Trail Mug, a disassembly of the cup was established by taking the bottom cap off and cutting the bottom end of the cup. This was done to access the inner membrane of the cup so the thermoelectric blanket could be attached to the inside of the cup. Once this was done, the circuit board was placed in the 3D printed extension. 
 
 # **Schematics**
-See the Code page for additional photos of the circuit.
-[Circuit Drawing.jpeg]
+image [Circuit Drawing.jpeg]
+image [Image of Built Circuit.jpeg]
 
 # **Engineering Drawings**
-See the Code page for additional photos of the 3D printed design.
+image [Cup ring drawing.pdf]
+image [Cup Bottom Drawing.pdf]
 
 # **Programming Code**
 ```markdown
@@ -87,6 +88,7 @@ Finally, there existed many complications with our intended temperature sensor. 
 
 ### *Test Results*
 Refer to the code page where data concerning the thermoelectric blanket can be found under file name <BAE 305 Data>
+link (BAE 305 Data.xlsx)
 
 # **References**
 *Arduino. (2018). ReadAnalogVoltage. Retrieved from: www.arduino.cc/en/Tutorial/ReadAnalogVoltage
