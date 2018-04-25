@@ -45,6 +45,7 @@ After obtaining the Ozark Trail Mug, a disassembly of the cup was established by
 
 # **Schematics**
 See the Code page for additional photos of the circuit.
+[Circuit Drawing.jpeg]
 
 # **Engineering Drawings**
 See the Code page for additional photos of the 3D printed design.
