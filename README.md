@@ -71,13 +71,28 @@ void loop() {
 }
 
 ```
+# **Test Equipment & Procedures**
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/grummel15/thermal-cup/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+# **Discussion**
+### *Design Decisions*
+In building the cup, we opted to purchase a cheap metal travel mug for its insulating properties. Our thinking was that the better insulated mug would lose much less heat than a poorly insulated plastic cup. To meet this criteria, the Ozark Trail mug from Walmart was selected. 
 
-### Support or Contact
+We also required a heating element for the project, and had to decide between more powerful semiconductor elements or a highly resistant heating blanket. The semiconductor element required a battery that was larger than our intended travel design, therefore leading us to using the Ultra Heating Fabric. This blanket required a slightly larger battery than we intended, and the voltage had to be stepped down to 5V to run the ESP32 Thing from Sparkfun. This lead to our inclusion of the voltage regulator. However, because the board was not at the voltage needed to run the blanket element, a MOSFET was required to bring the voltage back up to the value necessary to heat at an appropriate level. 
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Finally, there existed many complications with our intended temperature sensor. The Waterproof DS18B20 OneWire sensor was our intended sensor to determine the temperature of the liquid. However, the sensor was not compatible with our existing circuit. In the end, we switched to the National Semiconductor line of Precision Temperature Sensor currently in our circuit. This sensor is not waterproof, and is not as accurate as the DS18B20 was to be, but it drastically simplified the code and could be attached to the copper insert of the travel mug to read a similar temperature to that of the liquid. 
+
+
+### *Test Results*
+Refer to the code page where data concerning the thermoelectric blanket can be found under file name <BAE 305 Data>
+
+# **References**
+*Arduino. (2018). ReadAnalogVoltage. Retrieved from: www.arduino.cc/en/Tutorial/ReadAnalogVoltage
+
+*Arduino Project Hub. (2016). Arduino Thermometer with DS18B20. Retrieved from: https://create.arduino.cc/projecthub/TheGadgetBoy/ds18b20-digital-temperature-sensor-and-arduino-9cc806
+
+*Fairchild Semiconductor. (2004). RFP30N06LE, RF1S30N06LESM Data Sheet. Retrieved from: www.sparkfun.com/datasheets/Components/General/RFP30N06LE.pdf
+
+*WireKinetics, CO., LTD. Ultra Heating Fabric Data Sheet. Retrieved from: cdn-https://shop.adafruit.com/datasheets/Ultra+Heating+Fabric.pdf
+
