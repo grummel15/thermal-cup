@@ -44,7 +44,7 @@ The first part of the assembly was to assemble the circuit used. This was done u
 After obtaining the Ozark Trail Mug, a disassembly of the cup was established by taking the bottom cap off and cutting the bottom end of the cup. This was done to access the inner membrane of the cup so the thermoelectric blanket could be attached to the inside of the cup. Once this was done, the circuit board was placed in the 3D printed extension. 
 
 # **Schematics**
-image ![Screenshot (29).png]
+image ![Screenshot (29).png] (Screenshot (29))
 image [Image of Built Circuit.jpeg]
 
 # **Engineering Drawings**
@@ -95,11 +95,11 @@ Refer to the code page where data concerning the thermoelectric blanket can be f
 link (BAE 305 Data.xlsx)
 
 # **References**
-*Arduino. (2018). ReadAnalogVoltage. Retrieved from: www.arduino.cc/en/Tutorial/ReadAnalogVoltage
+* Arduino. (2018). ReadAnalogVoltage. Retrieved from: www.arduino.cc/en/Tutorial/ReadAnalogVoltage
 
-*Arduino Project Hub. (2016). Arduino Thermometer with DS18B20. Retrieved from: https://create.arduino.cc/projecthub/TheGadgetBoy/ds18b20-digital-temperature-sensor-and-arduino-9cc806
+* Arduino Project Hub. (2016). Arduino Thermometer with DS18B20. Retrieved from: https://create.arduino.cc/projecthub/TheGadgetBoy/ds18b20-digital-temperature-sensor-and-arduino-9cc806
 
-*Fairchild Semiconductor. (2004). RFP30N06LE, RF1S30N06LESM Data Sheet. Retrieved from: www.sparkfun.com/datasheets/Components/General/RFP30N06LE.pdf
+* Fairchild Semiconductor. (2004). RFP30N06LE, RF1S30N06LESM Data Sheet. Retrieved from: www.sparkfun.com/datasheets/Components/General/RFP30N06LE.pdf
 
-*WireKinetics, CO., LTD. Ultra Heating Fabric Data Sheet. Retrieved from: cdn-https://shop.adafruit.com/datasheets/Ultra+Heating+Fabric.pdf
+* WireKinetics, CO., LTD. Ultra Heating Fabric Data Sheet. Retrieved from: cdn-https://shop.adafruit.com/datasheets/Ultra+Heating+Fabric.pdf
 
