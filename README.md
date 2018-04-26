@@ -72,10 +72,13 @@ void loop() {
 
 }
 
-```
 # **Test Equipment & Procedures**
+### *Equipment*
+* Infrared Temperature Sensor
+* Multimeter
+* Thermometer
 
-
+We tested our heating pad by turning the circuit on and pointing the Infrared Temperature Sensor at the pad. This helped us to determine the heating capabilities of the pad. We tested the completed circuit and all of the components using a multimeter. This was to make sure that each component had the appropriate voltage/current running through it to function as intended. When the cup was completed, we inserted the thermometer in the water at the top of the cup. This was to test the functionality of the entire cup to see if the water would actually get hot. 
 
 # **Discussion**
 ### *Design Decisions*
@@ -84,7 +87,6 @@ In building the cup, we opted to purchase a cheap metal travel mug for its insul
 We also required a heating element for the project, and had to decide between more powerful semiconductor elements or a highly resistant heating blanket. The semiconductor element required a battery that was larger than our intended travel design, therefore leading us to using the Ultra Heating Fabric. This blanket required a slightly larger battery than we intended, and the voltage had to be stepped down to 5V to run the ESP32 Thing from Sparkfun. This lead to our inclusion of the voltage regulator. However, because the board was not at the voltage needed to run the blanket element, a MOSFET was required to bring the voltage back up to the value necessary to heat at an appropriate level. 
 
 Finally, there existed many complications with our intended temperature sensor. The Waterproof DS18B20 OneWire sensor was our intended sensor to determine the temperature of the liquid. However, the sensor was not compatible with our existing circuit. In the end, we switched to the National Semiconductor line of Precision Temperature Sensor currently in our circuit. This sensor is not waterproof, and is not as accurate as the DS18B20 was to be, but it drastically simplified the code and could be attached to the copper insert of the travel mug to read a similar temperature to that of the liquid. 
-
 
 ### *Test Results*
 Refer to the code page where data concerning the thermoelectric blanket can be found under file name <BAE 305 Data>
