@@ -73,7 +73,6 @@ void loop() {
 }
 
 
-,,,
 # **Test Equipment & Procedures**
 ### *Equipment*
 * Infrared Temperature Sensor
