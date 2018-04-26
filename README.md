@@ -6,6 +6,7 @@ The purpose of the thermal cup was to allow for sustained heating of beverages w
 
 # **Features**
 * Warms beverages over time using thermo-electric blanket
+* Thermo-electric blanket turns off and on in response to temperature sensor inside of cup
 * Detachable from container for safe troubleshooting
 * Runs from a simple 7.4V rechargeable battery source
 * MOSFET switch to turn thermo-electric blanket and circuit on/off
@@ -18,10 +19,9 @@ Click to proceed to YouTube.
 ### *Materials*
 * 7.4V rechargeable battery
 * Micro-USB Cable (for charging battery)
-* 4.7kΩ resistor
-* 1kΩ resistor
+* 3x 330Ω resistor
 * 5V Converter
-* MOSFET Switch
+* 2x NPN transistors
 * Thermo-electric Blanket
 * SparkFun ESP32 Thing Microcontroller
 * LM Series Precision Temperature Sensor
@@ -71,8 +71,14 @@ void loop() {
   Serial.println(Celsius);
   delay(1000);
   {
-  if (Celsius > 40)  digitalWrite(5,HIGH);
+  if (Celsius > 10)  
+  digitalWrite(18,HIGH);
+  Serial.println("H");
+  
   else
+  {
+  digitalWrite(18, LOW);
+  Serial.println("L");
   }
 }
 ```
@@ -83,7 +89,10 @@ void loop() {
 * Multimeter
 * Thermometer
 
-We tested our heating pad by turning the circuit on and pointing the Infrared Temperature Sensor at the pad. This helped us to determine the heating capabilities of the pad. We tested the completed circuit and all of the components using a multimeter. This was to make sure that each component had the appropriate voltage/current running through it to function as intended. When the cup was completed, we inserted the thermometer in the water at the top of the cup. This was to test the functionality of the entire cup to see if the water would actually get hot. 
+### *Procedure*
+* We tested our heating pad by turning the circuit on and pointing the Infrared Temperature Sensor at the pad. This helped us to determine the heating capabilities of the pad. 
+* We tested the completed circuit and all of the components using a multimeter. This was to make sure that each component had the appropriate voltage/current running through it to function as intended. 
+* When the cup was completed, we inserted the thermometer in the water at the top of the cup. This was to test the functionality of the entire cup to see if the water would actually get hot. 
 
 # **Discussion**
 ### *Design Decisions*
@@ -94,8 +103,13 @@ We also required a heating element for the project, and had to decide between mo
 Finally, there existed many complications with our intended temperature sensor. The Waterproof DS18B20 OneWire sensor was our intended sensor to determine the temperature of the liquid. However, the sensor was not compatible with our existing circuit. In the end, we switched to the National Semiconductor line of Precision Temperature Sensor currently in our circuit. This sensor is not waterproof, and is not as accurate as the DS18B20 was to be, but it drastically simplified the code and could be attached to the copper insert of the travel mug to read a similar temperature to that of the liquid. 
 
 ### *Test Results*
-Refer to the code page where data concerning the thermoelectric blanket can be found under file name <BAE 305 Data>
-link (BAE 305 Data.xlsx)
+* Below are the test results from the measurements of the thermal blanket with a voltage source of 6V. 
+![Thermal Blanket Data](BAE%20305%20Data.jpeg)
+
+* There are no results to be shown for the testing with the multimeter. We did this simply to ensure the actual function of the circuit components. 
+
+* The cup functioned and kept the water at a temperature up to 104°F. 
+
 
 # **References**
 * Arduino. (2018). ReadAnalogVoltage. Retrieved from: www.arduino.cc/en/Tutorial/ReadAnalogVoltage
