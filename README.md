@@ -71,8 +71,9 @@ void loop() {
   if (Celsius != 40)  digitalWrite (5,LOW);
 
 }
-,,,
 
+
+,,,
 # **Test Equipment & Procedures**
 ### *Equipment*
 * Infrared Temperature Sensor
