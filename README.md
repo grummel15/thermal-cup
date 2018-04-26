@@ -44,10 +44,14 @@ The first part of the assembly was to assemble the circuit used. This was done u
 After obtaining the Ozark Trail Mug, a disassembly of the cup was established by taking the bottom cap off and cutting the bottom end of the cup. This was done to access the inner membrane of the cup so the thermoelectric blanket could be attached to the inside of the cup. Once this was done, the circuit board was placed in the 3D printed extension. 
 
 # **Schematics**
+### Circuit Schematic
 ![Circuit Schematic](Screenshot%20(29).png)
 
 # **Engineering Drawings**
-
+### Cup Bottom
+![Cup Bottom](Cup%20Bottom.jpeg)
+### Cup Ring
+![Cup Ring](Cup%20Ring.jpeg)
 
 # **Programming Code**
 ```markdown
