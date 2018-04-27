@@ -45,7 +45,7 @@ After obtaining the Ozark Trail Mug, a disassembly of the cup was established by
 
 # **Schematics**
 ### Circuit Schematic
-![Circuit Schematic](Screenshot%20(29).png)
+![Circuit Schematic](Screenshot%20(31).png)
 
 # **Engineering Drawings**
 #### *Note: All measurements in millimeters (mm).*
