@@ -2,14 +2,13 @@
 Built by: Megan Davisson, Greg Rummel, and Bo Smith/Spring 2018/BAE 305
 
 # **Summary**
-The purpose of the thermal cup was to allow for sustained heating of beverages while drinking. Warm drinks cool quickly in cool conditions without the application of heat. With the Thermal Cup, the beverage will be sustained at a temperature of 80° F. This system could be useful in other applications when applied at a different scale, such as heating of a home aquarium, swimming pool, or bathtub.
+The purpose of the thermal cup was to allow for sustained heating of beverages while drinking. Warm drinks cool quickly in cool conditions without the application of heat. With the Thermal Cup, the beverage will be sustained at a specified temperature of 104° F. This system could be useful in other applications when applied at a different scale, such as heating of a home aquarium, swimming pool, or bathtub.
 
 # **Features**
 * Warms beverages over time using thermo-electric blanket
-* Thermo-electric blanket turns off and on in response to temperature sensor inside of cup
 * Detachable from container for safe troubleshooting
 * Runs from a simple 7.4V rechargeable battery source
-* MOSFET switch to turn thermo-electric blanket and circuit on/off
+* Transistor switch to turn thermo-electric blanket and circuit on/off
 * Insulation foam inside of cup to trap heat 
 
 # **Video**
@@ -37,11 +36,28 @@ Click to proceed to YouTube.
 * Wire Strippers
 * Hammer
 * Flat Head Screwdriver
+* Electrical Tape
 
 # **Assembly Procedure**
-The first part of the assembly was to assemble the circuit used. This was done using an ESP32 thing micro-controller. The micro-controller received power from the lithium ion battery through a 5V converter. This 5V converter then goes through and powers the temperature sensor, while the thermoelectric blanket is turned on and off using a MOSFET. 
+Circuit:
+* The first part of the circuit is to take the ESP32 Thing and place it onto a breadboard.
+* Designate the power rails
+* Place desired transistors on the breadboard
+* Run the a wire from the desired pin on the ESP32 to pin 1 of one of the NPN transistors. Also connect pin 1 to the power rail through a 1kOhm resistor. 
+* Connect pin 3 on the same transistor to ground. 
+* Then run pin 1 of transistor one to pin 2 of transistor two. While connecting pin 3 of transistor two to ground and pin one to the battery through a 330 kOhm resistor. 
+* Place the 5V converter on the breadboard. 
+* From the battery connect to pin 3 through a 1kOhm resistor, connect ground to pin 2 and run a wire from pin 3 to the ESP32. 
+* From the 5V converter connect the temperature sensor. Pin 3 and pin 2 are connected to power and ground respectively from the temperature sensor to the 5V converter. Data (pin 2) of the temperature sensor connects to pin 2 on the 5V converter. 
 
-After obtaining the Ozark Trail Mug, a disassembly of the cup was established by taking the bottom cap off and cutting the bottom end of the cup. This was done to access the inner membrane of the cup so the thermoelectric blanket could be attached to the inside of the cup. Once this was done, the circuit board was placed in the 3D printed extension. 
+Design:
+* Obtain an Ozark Trail Mug, and using utensils of your choice pop the bottom cap off. 
+* Once the bottom cap is off, cut the aluminum bottom of the cup (careful, the inside is pressurized). 
+* Attach the top of the 3-D print to the bottom aluminum portion of the cup. 
+* Using adhesive of your choice, place thermoelectric blanket inside of the cup. 
+* Using foam insulation of your choice, insert tip into cup and insulate the cup. 
+* After the adhesive and insulation have dried, connect the blanket to the circuit. 
+* Using the big 3-D extension encapsulate the circuits. Next is your choice, make sure the battery is charged!
 
 # **Schematics**
 ### Circuit Schematic
@@ -108,7 +124,7 @@ Finally, there existed many complications with our intended temperature sensor. 
 
 * There are no results to be shown for the testing with the multimeter. We did this simply to ensure the actual function of the circuit components. 
 
-* The cup functioned and kept the water at a temperature up to 104°F. 
+* The cup functioned and water was heated from 75.2°F to 105.8°F
 
 
 # **References**
