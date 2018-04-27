@@ -12,7 +12,9 @@ The purpose of the thermal cup was to allow for sustained heating of beverages w
 * Insulation foam inside of cup to trap heat 
 
 # **Video**
-Click to proceed to YouTube.
+*To see a short video about the thermal cup, please go to:*
+https://youtu.be/ryDpx3QG2QU
+
 
 # **Materials**
 ### *Materials*
